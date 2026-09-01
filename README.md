@@ -17,18 +17,30 @@ Traducir los hallazgos estadísticos en implicaciones de negocio accionables, do
 Archivo: novaretail_comportamiento_clientes_2024.csv
 Registros: 15,000 clientes, sin valores nulos.
 Columnas (12):
-Columna	Descripción
-id_cliente	Identificador único del cliente
-edad	Edad del cliente
-nivel_ingreso	Ingreso anual estimado del cliente (personal)
-visitas_mes	Número de visitas a la app/sitio web en el mes
-compras_mes	Número de compras realizadas en el mes
-gasto_publicidad_dirigida	Gasto en anuncios asignado al usuario
-satisfaccion	Calificación de satisfacción (escala 1-5)
-miembro_premium	Suscripción premium (1 = sí, 0 = no)
-abandono	Abandono de la plataforma / churn (1 = sí, 0 = no)
-tipo_dispositivo	Dispositivo utilizado (móvil, escritorio, tablet)
-region	Región geográfica del cliente (norte, sur, este, oeste)
+Columna —	Descripción
+
+id_cliente —	Identificador único del cliente
+
+edad — Edad del cliente
+
+nivel_ingreso	— Ingreso anual estimado del cliente (personal)
+
+visitas_mes	— Número de visitas a la app/sitio web en el mes
+
+compras_mes	— Número de compras realizadas en el mes
+
+gasto_publicidad_dirigida	— Gasto en anuncios asignado al usuario
+
+satisfaccion	— Calificación de satisfacción (escala 1-5)
+
+miembro_premium	— Suscripción premium (1 = sí, 0 = no)
+
+abandono	— Abandono de la plataforma / churn (1 = sí, 0 = no)
+
+tipo_dispositivo	— Dispositivo utilizado (móvil, escritorio, tablet)
+
+region	— Región geográfica del cliente (norte, sur, este, oeste)
+
 ingreso_anual	Métrica principal — ingreso (revenue) generado por el cliente para la empresa
 
 🔍 Etapas del análisis
