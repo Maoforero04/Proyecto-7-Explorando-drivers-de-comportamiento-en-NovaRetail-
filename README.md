@@ -13,6 +13,7 @@ Identificar y cuantificar relaciones entre variables de comportamiento del clien
 Traducir los hallazgos estadísticos en implicaciones de negocio accionables, documentando explícitamente qué se puede y qué no se puede afirmar con este tipo de análisis (correlación ≠ causalidad).
 
 📊 Dataset utilizado
+
 Archivo: novaretail_comportamiento_clientes_2024.csv
 Registros: 15,000 clientes, sin valores nulos.
 Columnas (12):
@@ -35,16 +36,21 @@ ingreso_anual	Métrica principal — ingreso (revenue) generado por el cliente p
 El notebook S8_Student_Version-Project-NovaRetail.ipynb está organizado en 6 secciones:
 
 Sección 1 — Cargar y explorar el dataset: carga del CSV, revisión de tipos de datos, valores faltantes y rangos generales.
+
 Sección 2 — Preparar datos y documentar supuestos: limpieza y corrección de tipos de datos; diagnóstico de variables numéricas, binarias y categóricas; documentación de supuestos del análisis.
+
 Sección 3 — Visualización de relaciones:
 Heatmap de correlación entre variables numéricas.
 Evaluación razonada de la necesidad (o no) de un scatterplot general.
 Scatterplots específicos para los pares de variables con relaciones moderadas o fuertes (ingreso_anual vs compras_mes, ingreso_anual vs visitas_mes).
+
 Sección 4 — Coeficientes de correlación y evidencia numérica:
 Correlación de Pearson entre variables numéricas relevantes.
 Correlación punto-biserial entre ingreso_anual y variables binarias (miembro_premium, abandono).
 V de Cramér entre variables categóricas (tipo_dispositivo vs region).
+
 Sección 5 — Interpretación de resultados para el negocio: hallazgos documentados con evidencia visual, evidencia numérica, interpretación no causal, qué no se puede afirmar, e implicación de negocio para cada relación relevante (p. ej. compras_mes como impulsor directo de ingreso_anual, visitas_mes como relación mediada, independencia entre tipo_dispositivo y region).
+
 Sección 6 — Limitaciones y próximos pasos: reconocimiento honesto de las limitaciones del análisis (correlación vs. causalidad, variables externas no consideradas, naturaleza transversal del dataset) y propuesta de siguientes pasos (segmentación adicional, experimentos A/B, nuevas variables a recolectar).
 
 Librerías utilizadas: pandas, numpy, seaborn, matplotlib, scipy.stats (pointbiserialr, chi2_contingency).
